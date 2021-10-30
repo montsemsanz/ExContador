@@ -2,7 +2,7 @@
 /**
  * Modela un contador
  * 
- * @author 
+ * @author - montseaweb
  * @version 
  */
 public class Contador {
@@ -26,6 +26,7 @@ public class Contador {
      * mutador, incrementa en uno el contador
      */
     public void incrementar()   {
+        this.valor++;
          
     }
     
@@ -33,6 +34,7 @@ public class Contador {
      * mutador, decrementa en uno el contador
      */
     public void decrementar()   {
+        this.valor--;
              
     }
     
@@ -45,6 +47,21 @@ public class Contador {
             valor = 0;
     }
     
+    /**
+     * 
+     */
+    public String toString() {
+        return String.format("Contador: %4d", this.valor);
+        
+    }
+
+    public static void main(String[] args) {
+        Contador c = new Contador();
+        for(int i = 1; i <= 10; i++) {
+            c.incrementar();
+        }
+        System.out.println(c);
+    }
     
     
     
