@@ -2,7 +2,7 @@
 /**
  * Modela un contador
  * 
- * @author 
+ * @author - mprog1920
  * @version 
  */
 public class Contador {
@@ -26,14 +26,14 @@ public class Contador {
      * mutador, incrementa en uno el contador
      */
     public void incrementar()   {
-         
+         valor = valor + 1;
     }
     
     /**
      * mutador, decrementa en uno el contador
      */
     public void decrementar()   {
-             
+        valor = valor - 1;
     }
     
   
