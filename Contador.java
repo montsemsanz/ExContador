@@ -2,7 +2,7 @@
 /**
  * Modela un contador
  * 
- * @author
+ * @author - MontseAWeb
  * @version
  */
 public class Contador {
