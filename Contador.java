@@ -2,8 +2,8 @@
 /**
  * Modela un contador
  * 
- * @author 
- * @version 
+ * @author
+ * @version
  */
 public class Contador {
     private int valor;
@@ -11,40 +11,39 @@ public class Contador {
     /**
      * Constructorde la clase Contador
      */
-    public Contador()   {  
-       valor = 0;
+    public Contador() {
+        valor = 0;
     }
-    
+
     /**
      * accesor
      */
-    public int getContador()    {
+    public int getContador() {
         return valor;
     }
-    
+
     /**
      * mutador, incrementa en uno el contador
      */
-    public void incrementar()   {
-         
+    public void incrementar() {
+        valor++;
+
     }
-    
+
     /**
      * mutador, decrementa en uno el contador
      */
-    public void decrementar()   {
-             
+    public void decrementar() {
+        valor--;
     }
-    
-  
-     /**
-     * mutador, inicializa (hace un reset)
-     * a 0 el contador
+
+    /**
+     * mutador, inicializa (hace un reset) a 0 el contador
      */
-     public void reset() {
-         valor = 0;
-     }
-    
+    public void reset() {
+        valor = 0;
+    }
+
     public static void main(String[] args) {
         Contador c = new Contador();
         for (int i = 0; i < 10; i++) {
@@ -53,8 +52,5 @@ public class Contador {
         }
         System.out.println(c.getContador());
     }
-    
-    
-    
-    
+
 }
