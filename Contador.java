@@ -41,8 +41,17 @@ public class Contador {
      * mutador, inicializa (hace un reset)
      * a 0 el contador
      */
-    public void reset()    {
-            valor = 0;
+     public void reset() {
+         valor = 0;
+     }
+    
+    public static void main(String[] args) {
+        Contador c = new Contador();
+        for (int i = 0; i < 10; i++) {
+            c.incrementar();
+
+        }
+        System.out.println(c.getContador());
     }
     
     
